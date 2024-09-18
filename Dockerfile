@@ -6,8 +6,6 @@ RUN apt-get update && apt-get install -y \
   python3-yaml \
   git
 
-RUN apt install python3-PyYAML   
-
 COPY feed.py /usr/bin/feed.py
 
 COPY entrypoint.sh /entrypoint.sh
